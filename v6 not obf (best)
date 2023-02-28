@@ -13,22 +13,7 @@
 -- NEW AUTO PREDICTION
 -- ADDED NO SLOW + INF JUMP + COLOR CORRECTION
 -- JUST GOOD
-local new = {
-   main = {
-      Mario = true,
-      Prediction = 0.1211,
-      Part = "HumanoidRootPart", -- Head, UpperTorso, HumanoidRootPart, LowerTorso, RightFoot, LeftFoot, RightArm, LeftArm
-      Key = "q",
-      Notifications = true,
-      AirshotFunc = true
-   },
-   Tracer = {
-      TracerThickness = 2.7,
-      TracerTransparency = 1.1,
-      TracerColor = Color3.fromRGB(255, 255, 255)
-   }
-}
-
+local losix = "mario"
 local CurrentCamera = game:GetService "Workspace".CurrentCamera
 local Mouse = game.Players.LocalPlayer:GetMouse()
 local RunService = game:GetService("RunService")
