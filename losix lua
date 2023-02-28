@@ -1,4 +1,3 @@
-local losix = "mario"
 local CurrentCamera = game:GetService "Workspace".CurrentCamera
 local Mouse = game.Players.LocalPlayer:GetMouse()
 local RunService = game:GetService("RunService")
