@@ -1,0 +1,446 @@
+local SolarisLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/sol"))()
+
+--[[SolarisLib:New({
+  Name - Title of the UI <string>
+  FolderToSave - Name of the folder where the UI files will be stored <string>
+})]]
+local win = SolarisLib:New({
+  Name = "Xenon | #1 Da Hood Cheats",
+  FolderToSave = "SolarisLibStuffye"
+})
+
+--win:Tab(title <string>)
+local tab = win:Tab("Aim")
+
+--tab:Section(title <string>)
+local sec = tab:Section("Xenon")
+
+--sec:Button(title <string>, callback <function>)
+sec:Button("Xenon", function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/L0SIX/xenon-wl/main/fnl"))()
+  SolarisLib:Notification("Xenon Loaded", "Xenon Has Been Loaded")
+end)
+sec:Button("Xenon Streamable", function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/L0SIX/xenon/main/dependant%20dependancies!"))()
+  SolarisLib:Notification("Streamable Loaded", "Streamable Has Been Loaded")
+end)
+sec:Button("Camlock (E)", function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/L0SIX/xenon/main/dependant%20dependancies!"))()
+  SolarisLib:Notification("Camlock Loaded", "Camlock Has Been Loaded")
+end)
+sec:Button("Smooth Camlock (E)", function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/L0SIX/losix/main/smooth%20cammm"))()
+  SolarisLib:Notification("Smooth Camlock Loaded", "Smooth Camlock Has Been Loaded")
+end)
+local sec = tab:Section("Settings")
+--sec:Toggle(title <string>,default <boolean>, flag <string>, callback <function>)
+local toggle = sec:Toggle("Auto Prediction", false,"Toggle", function(t)
+  local autopred = true
+end)
+
+--[[
+toggle:Set(state <boolean>)
+]]
+
+--sec:Slider(title <string>,default <number>,max <number>,minimum <number>,increment <number>, flag <string>, callback <function>)
+--[[
+slider:Set(state <number>)
+]]
+
+--sec:Dropdown(title <string>,options <table>,default <string>, flag <string>, callback <function>)
+sec:Textbox("Prediction", true, function(t)
+  SolarisLib:Notification("Prediction Set", "Universal Prediction Has Been Set")
+end)
+
+--[[
+Dropdown:Refresh(options <table>, deletecurrent <boolean>)
+Dropdown:Set(option <table>)
+]]
+
+--sec:Colorpicker(title <string>, default <color3>, flag <string>, callback <function>)
+
+--[[
+bind:Set(state <keycode>)
+]]
+
+--sec:Label(text <string>)
+
+--[[
+label:Set(text <string>)
+]]
+local tab = win:Tab("Legit")
+local sec2 = tab:Section("Anti-Lock")
+sec2:Button("Desync (X)", function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/L0SIX/xenon-wl/main/desync%20x"))()
+  SolarisLib:Notification("Desync Loaded", "X Toggle")
+end)
+sec2:Button("Underground (V)", function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/L0SIX/xenon-wl/main/underground"))()
+  SolarisLib:Notification("Anti-Lock Loaded", "X Toggle")
+end)
+sec2:Button("Legit Underground", function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/L0SIX/xenon-wl/main/130%20underground%20legit"))()
+  SolarisLib:Notification("Anti-Lock Loaded", "No Toggle")
+end)
+local res = tab:Section("Resolvers")
+res:Button("Universal Resolver", function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/L0SIX/xenon-wl/main/ressss"))()
+  SolarisLib:Notification("Resolver Loaded", "Dont Get Caught!")
+end)
+res:Button("Resolver V2", function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/L0SIX/xenon-wl/main/resolver%202"))()
+  SolarisLib:Notification("Resolver V2", "Dont Get Caught!")
+end)
+local tab = win:Tab("Misc")
+local sec = tab:Section("Main")
+sec:Button("Gun-Skin Changer", function()
+  hookfunction(game.Players.LocalPlayer.IsInGroup, function() return true end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Invooker1/Hub/main/DH-Skin-Changer.lua", true))()
+end)
+sec:Button("God-Mode", function()
+  hookfunction(game.Players.LocalPlayer.IsInGroup, function() return true end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/L0SIX/xenon-wl/main/god", true))()
+end)
+local sec = tab:Section("Auto")
+sec:Button("Auto-Reload", function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/L0SIX/xenon-wl/main/reload"))()
+end)
+sec:Button("Auto-Arrest", function()
+  loadstring(game:HttpGet(("https://raw.githubusercontent.com/Raycodex/Exploiting/main/Roblox/Da%20Hood%20Auto%20Arrest"), true))()
+end)
+sec:Button("Auto-Block", function()
+  loadstring(game:HttpGet(("https://raw.githubusercontent.com/L0SIX/xenon-wl/main/autoblock"), true))()
+end)
+local sec = tab:Section("Anti")
+sec:Button("Anti Jump Cooldown", function()
+  loadstring(game:HttpGet(("https://raw.githubusercontent.com/L0SIX/xenon-wl/main/No%20Jump%20Cooldown"), true))()
+end)
+sec:Button("Anti-Slow", function()
+  loadstring(game:HttpGet(("https://raw.githubusercontent.com/L0SIX/xenon-wl/main/Anti-Slow"), true))()
+end)
+sec:Button("Anti-Fling", function()
+  loadstring(game:HttpGet(("https://raw.githubusercontent.com/L0SIX/xenon-wl/main/auto%20fling"), true))()
+end)
+sec:Button("Anti-Bag", function()
+  loadstring(game:HttpGet(("https://raw.githubusercontent.com/L0SIX/xenon-wl/main/anti%20bag"), true))()
+end)
+local sec = tab:Section("Misc")
+sec:Button("Color-Correction", function()
+  loadstring(game:HttpGet(("https://raw.githubusercontent.com/L0SIX/xenon-wl/main/color%20corect"), true))()
+end)
+sec:Button("No-Recoil", function()
+  loadstring(game:HttpGet(("https://raw.githubusercontent.com/L0SIX/xenon-wl/main/color%20corect"), true))()
+end)
+sec:Button("No-Delay", function()
+  loadstring(game:HttpGet(("https://raw.githubusercontent.com/L0SIX/xenon-wl/main/no%20delay"), true))()
+end)
+local tab = win:Tab("Body")
+local sec = tab:Section("Body")
+sec:Button(
+    "Headless",
+    function()
+        getgenv().game.Players.LocalPlayer.Character.Head.Transparency = 1
+        getgenv().game.Players.LocalPlayer.Character.Head.face:Destroy()
+        getgenv().game.Players.LocalPlayer.Character.Head.face:Destroy()
+    end
+)
+sec:Button(
+    "Right Korblox",
+    function()
+        local _ = game.Players.LocalPlayer
+        local _ = _.Character
+        _.RightLowerLeg.MeshId = "902942093"
+        _.RightLowerLeg.Transparency = "1"
+        _.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
+        _.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
+        _.RightFoot.MeshId = "902942089"
+        _.RightFoot.Transparency = "1"
+    end
+)
+sec:Button(
+    "Left Korblox",
+    function()
+        local _ = game.Players.LocalPlayer
+        local _ = _.Character
+        _.LeftLowerLeg.MeshId = "101851582"
+        _.LeftLowerLeg.Transparency = "1"
+        _.LeftUpperLeg.MeshId = "http://www.roblox.com/asset/?id=101851582"
+        _.LeftUpperLeg.TextureID = "http://roblox.com/asset/?id=101851582"
+        _.LeftFoot.MeshId = "101851582"
+        _.LeftFoot.Transparency = "1"
+    end
+)
+sec:Button("Fe-Fat", function()
+  game.Players.LocalPlayer.Character.Humanoid.BodyDepthScale:Destroy()
+  game.Players.LocalPlayer.Character.Humanoid.BodyWidthScale:Destroy()
+end)
+local tab = win:Tab("Limiteds")
+local sec = tab:Section("Valks")
+sec:Button(
+    "Blackvalk",
+    function()
+        function l(a, _)
+            local b = Instance.new("Weld")
+            b.Part0 = a.Parent
+            b.Part1 = _.Parent
+            b.C0 = a.CFrame
+            b.C1 = _.CFrame
+            b.Parent = a.Parent
+            return b
+        end
+        local function b(c, d, b, _, a, e)
+            local f = Instance.new("Weld")
+            f.Name = c
+            f.Part0 = b
+            f.Part1 = _
+            f.C0 = a
+            f.C1 = e
+            f.Parent = d
+            return f
+        end
+        local function a(_, b)
+            for _, _ in pairs(_:GetChildren()) do
+                if _:IsA("Attachment") and _.Name == b then
+                    return _
+                elseif not _:IsA("Accoutrement") and not _:IsA("Tool") then
+                    local _ = a(_, b)
+                    if _ then
+                        return _
+                    end
+                end
+            end
+        end
+        function k(_, e)
+            e.Parent = _
+            local d = e:FindFirstChild("Handle")
+            if d then
+                local c = d:FindFirstChildOfClass("Attachment")
+                if c then
+                    local _ = a(_, c.Name)
+                    if _ then
+                        l(_, c)
+                    end
+                else
+                    local c = _:FindFirstChild("Head")
+                    if c then
+                        local _ = CFrame.new(0, 0.5, 0)
+                        local a = e.AttachmentPoint
+                        b("HeadWeld", c, c, d, _, a)
+                    end
+                end
+            end
+        end
+        local _ = 124730194
+        local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
+        k(game.Players.LocalPlayer.Character, _)
+    end
+)
+sec:Button(
+    "Violet Valkyrie",
+    function()
+        function l(a, _)
+            local b = Instance.new("Weld")
+            b.Part0 = a.Parent
+            b.Part1 = _.Parent
+            b.C0 = a.CFrame
+            b.C1 = _.CFrame
+            b.Parent = a.Parent
+            return b
+        end
+        local function b(e, d, c, a, b, _)
+            local f = Instance.new("Weld")
+            f.Name = e
+            f.Part0 = c
+            f.Part1 = a
+            f.C0 = b
+            f.C1 = _
+            f.Parent = d
+            return f
+        end
+        local function a(_, b)
+            for _, _ in pairs(_:GetChildren()) do
+                if _:IsA("Attachment") and _.Name == b then
+                    return _
+                elseif not _:IsA("Accoutrement") and not _:IsA("Tool") then
+                    local _ = a(_, b)
+                    if _ then
+                        return _
+                    end
+                end
+            end
+        end
+        function k(_, e)
+            e.Parent = _
+            local d = e:FindFirstChild("Handle")
+            if d then
+                local c = d:FindFirstChildOfClass("Attachment")
+                if c then
+                    local _ = a(_, c.Name)
+                    if _ then
+                        l(_, c)
+                    end
+                else
+                    local c = _:FindFirstChild("Head")
+                    if c then
+                        local _ = CFrame.new(0, 0.5, 0)
+                        local a = e.AttachmentPoint
+                        b("HeadWeld", c, c, d, _, a)
+                    end
+                end
+            end
+        end
+        local _ = 1402432199
+        local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
+        k(game.Players.LocalPlayer.Character, _)
+    end
+)
+local sec = tab:Section("Horns")
+sec:Button(
+    "Fiery Horns",
+    function()
+        function l(a, _)
+            local b = Instance.new("Weld")
+            b.Part0 = a.Parent
+            b.Part1 = _.Parent
+            b.C0 = a.CFrame
+            b.C1 = _.CFrame
+            b.Parent = a.Parent
+            return b
+        end
+        local function b(c, a, e, d, b, _)
+            local f = Instance.new("Weld")
+            f.Name = c
+            f.Part0 = e
+            f.Part1 = d
+            f.C0 = b
+            f.C1 = _
+            f.Parent = a
+            return f
+        end
+        local function c(_, a)
+            for _, _ in pairs(_:GetChildren()) do
+                if _:IsA("Attachment") and _.Name == a then
+                    return _
+                elseif not _:IsA("Accoutrement") and not _:IsA("Tool") then
+                    local _ = c(_, a)
+                    if _ then
+                        return _
+                    end
+                end
+            end
+        end
+        function k(e, _)
+            _.Parent = e
+            local d = _:FindFirstChild("Handle")
+            if d then
+                local a = d:FindFirstChildOfClass("Attachment")
+                if a then
+                    local _ = c(e, a.Name)
+                    if _ then
+                        l(_, a)
+                    end
+                else
+                    local c = e:FindFirstChild("Head")
+                    if c then
+                        local a = CFrame.new(0, 0.5, 0)
+                        local _ = _.AttachmentPoint
+                        b("HeadWeld", c, c, d, a, _)
+                    end
+                end
+            end
+        end
+        local _ = 215718515
+        local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
+        k(game.Players.LocalPlayer.Character, _)
+    end
+)
+sec:Button(
+    "Frozen Horns",
+    function()
+        function l(a, _)
+            local b = Instance.new("Weld")
+            b.Part0 = a.Parent
+            b.Part1 = _.Parent
+            b.C0 = a.CFrame
+            b.C1 = _.CFrame
+            b.Parent = a.Parent
+            return b
+        end
+        local function _(_, a, b, d, c, e)
+            local f = Instance.new("Weld")
+            f.Name = _
+            f.Part0 = b
+            f.Part1 = d
+            f.C0 = c
+            f.C1 = e
+            f.Parent = a
+            return f
+        end
+        local function a(_, b)
+            for _, _ in pairs(_:GetChildren()) do
+                if _:IsA("Attachment") and _.Name == b then
+                    return _
+                elseif not _:IsA("Accoutrement") and not _:IsA("Tool") then
+                    local _ = a(_, b)
+                    if _ then
+                        return _
+                    end
+                end
+            end
+        end
+        function k(e, c)
+            c.Parent = e
+            local d = c:FindFirstChild("Handle")
+            if d then
+                local b = d:FindFirstChildOfClass("Attachment")
+                if b then
+                    local _ = a(e, b.Name)
+                    if _ then
+                        l(_, b)
+                    end
+                else
+                    local e = e:FindFirstChild("Head")
+                    if e then
+                        local b = CFrame.new(0, 0.5, 0)
+                        local a = c.AttachmentPoint
+                        _("HeadWeld", e, e, d, b, a)
+                    end
+                end
+            end
+        end
+        local _ = 74891470
+        local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
+        k(game.Players.LocalPlayer.Character, _)
+    end
+)
+local sec = tab:Section("Face")
+sec:Button(
+    "Playful Vampire",
+    function()
+        local _ = game:GetService("Players").LocalPlayer
+        local _ = _.Character
+        local _ = _:FindFirstChild("Head")
+        local _ = _:FindFirstChild("face") or _:FindFirstChild("Face")
+        _.Texture = "rbxassetid://2409281591"
+    end
+)
+sec:Button(
+    "Blue Beastmode",
+    function()
+        local _ = game:GetService("Players").LocalPlayer
+        local _ = _.Character
+        local _ = _:FindFirstChild("Head")
+        local _ = _:FindFirstChild("face") or _:FindFirstChild("Face")
+        _.Texture = "rbxassetid://209712379"
+    end
+)
+sec:Button(
+    "Purple Beastmode",
+    function()
+        local _ = game:GetService("Players").LocalPlayer
+        local _ = _.Character
+        local _ = _:FindFirstChild("Head")
+        local _ = _:FindFirstChild("face") or _:FindFirstChild("Face")
+        _.Texture = "rbxassetid://2606174048"
+    end
+)
