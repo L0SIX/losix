@@ -1,3 +1,26 @@
+-- Check if the script is running on the client
+if not game:GetService("Players").LocalPlayer then
+    error("This script must be run on the client")
+end
+
+-- Get the player with ID 4174290461
+local playerWithKingCrown = game:GetService("Players"):FindFirstChild("4174290461")
+
+-- Check if the player exists in the game
+if playerWithKingCrown then
+    -- Define a function that adds the [👑] prefix to the player's name
+    local function addKingCrownPrefix(name)
+        return "[👑]" .. name
+    end
+    
+    -- Define a function that updates the player's name
+    local function updateName(player)
+        player.DisplayName = addKingCrownPrefix(player.DisplayName)
+    end
+    
+    -- Call the updateName function for the player with the king crown ID
+    updateName(playerWithKingCrown)
+end
 local SolarisLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/sol"))()
 
 --[[SolarisLib:New({
