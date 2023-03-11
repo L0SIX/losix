@@ -10,7 +10,7 @@ local playerWithKingCrown = game:GetService("Players"):FindFirstChild("417429046
 if playerWithKingCrown then
     -- Define a function that adds the [👑] prefix to the player's name
     local function addKingCrownPrefix(name)
-        return "[👑]" .. name
+        return "[⭐️]" .. name
     end
     
     -- Define a function that updates the player's name
